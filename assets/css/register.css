@@ -86,6 +86,12 @@
     margin: 5px 0;
     border: 1px solid #8F9090;
     color: #8F9090;
+    padding-right: 20px;
+    background-color: #fff;
+}
+
+.right-content form select::-ms-expand {
+    padding-right: 20px;
 }
 
 .right-content form button{
