@@ -105,12 +105,16 @@ main {
 
 .hero-btn {
   background-color: #136F63;
-  padding: 12px 28px;
+  padding: 12px 15px;
   border-radius: 6px;
-  width: 100px;
+  width: 120px;
   margin: auto;
   color: #fff;
   font-size: 18px;
+}
+
+.hero-btn p{
+  margin-bottom: 0;
 }
 
 .hero {
