@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Light.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../font/Gilroy-ExtraBold.otf') format('opentype');
+  }
+
+*{
+  
+  margin: 0;
+}
+
+.form-section {
+    display: flex;
+}
+
+.form-section .left{
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(172.32deg, #EADC7D 48.25%, #FFFFFF 48.26%, #629F97 91.08%);
+    text-align: center;
+    
+}
+
+.left-content {
+    margin-top: 130px;
+}
+
+.left-content img {
+    height: 350px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.left-content h2{
+    font-family: Gilroy-Bold, serif !important;
+    font-size: 40px;
+
+}
+
+.form-section .right{
+    width: 50%;
+    height: 100vh;
+    font-family: Gilroy, serif !important;
+    
+}
+
+.right-content {
+    padding: 0 30px;
+    width: 80%;
+    margin-top: 130px;
+}
+
+.right-content .form-head{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.right-content form input{
+    padding: 15px 20px;
+    width: 100%; 
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 3px;
+    margin: 5px 0;
+    border: 1px solid #8F9090;
+    color: #8F9090;
+}
+
+.right-content form {
+    margin-top: 70px;
+}
+
+.right-content form select{
+    padding: 15px 20px;
+    width: 100%; 
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 3px;
+    margin: 5px 0;
+    border: 1px solid #8F9090;
+    color: #8F9090;
+}
+
+.right-content form button{
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #136F63;
+    border: none;
+    color: #fff;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 750px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100% !important;
+        background: linear-gradient(172.32deg, #EADC7D 48.25%, #FFFFFF 48.26%, #629F97 91.08%);
+    }
+
+    .right-content {
+        width: 320px;
+        margin: auto;
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .right-content {
+        width: 90%;
+        padding: 0;
+    }
+}

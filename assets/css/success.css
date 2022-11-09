@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Light.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../font/Gilroy-ExtraBold.otf') format('opentype');
+  }
+
+*{  
+  margin: 0;
+}
+
+.body-back {
+    height: 100vh;
+    background: linear-gradient(172.32deg, #EADC7D 48.25%, #FFFFFF 48.26%, #629F97 91.08%);
+    padding: 0 5%;
+}
+
+.success-box {
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 30px 0px;
+    margin: auto;
+    
+}
+
+.success-box .box {
+    background-color: #fff;
+    margin-top: 110px;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 5px;
+}
+
+.success-box .box img{
+    height: 250px;
+}
+
+.success-box .box h2{
+    font-size: 30px;
+    font-family: Gilroy-Bold, serif !important;
+}
+
+.success-box .box p{
+    font-size: 18px;
+    font-family: Gilroy, serif !important;
+}
+
+.success-box .box button{
+    padding: 15px 20px;
+    width: 70%;
+    background-color: #136F63;
+    border: none;
+    color: #fff;
+    margin-top: 40px;
+    font-family: Gilroy, serif !important;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 720px) {
+    .success-box {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .success-box .box {
+        margin-top: 80px;
+    }
+}
