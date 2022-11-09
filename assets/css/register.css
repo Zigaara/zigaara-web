@@ -77,7 +77,7 @@
 }
 
 .right-content form select{
-    padding: 15px 20px;
+    padding: 15px 17px;
     width: 100%; 
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
@@ -90,10 +90,6 @@
     background-color: #fff;
 }
 
-.right-content form select::-ms-expand {
-    padding-right: 20px;
-}
-
 .right-content form button{
     padding: 15px 20px;
     width: 100%;
@@ -101,6 +97,7 @@
     border: none;
     color: #fff;
     margin-top: 40px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 750px) {
