@@ -30,7 +30,7 @@
 }
 
 .left-content img {
-    height: 350px;
+    height: 400px;
     width: auto;
     margin-top: 30px;
 }
@@ -104,7 +104,6 @@
 
     .right {
         width: 100% !important;
-        background: linear-gradient(172.32deg, #EADC7D 48.25%, #FFFFFF 48.26%, #629F97 91.08%);
     }
 
     .right-content {
