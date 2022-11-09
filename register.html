@@ -25,22 +25,34 @@
                 <div class="right-content">
                     <p class="form-head">Welcome to Zigaara !</p>
                     <p>Ready to grow and scale your business ? Sign up !</p>
-                    <form method="POST" action="success.html">
-                        <select name="" class="" required>
+                    <form onsubmit="nin_check(); return false;" action="#">
+                        <!-- <select name="" class="" required>
                             <option value="">Account Type</option>
                             <option value="business">Business</option>
                             <option value="dispatcher">Dispatcher</option>
-                        </select> <br />
-                        <input class="" name="full_name" type="text" placeholder="Full Name" required/> <br />
+                        </select> <br /> -->
+                        <input class="" name="full_name" type="text" id="first_name" placeholder="First Name" required/> <br />
+                        <input class="" name="full_name" type="text" id="last_name" placeholder="Last Name" required/> <br />
                         <input class="" name="email" type="email" placeholder="Email Address" required /> <br />
-                        <input class="" name="nin" type="number" placeholder="NIN" required/>
+                        <input class="" name="nin" type="number" id="nin" nin placeholder="NIN" required/>
                         <input class="" name="password" type="password" placeholder="Password" required />
-                        <button type="submit" disabled>Sign Up</button>
+                        <div class="error" id="show-error" style="display:none;">
+                            <p id="error">An unexpected error occurred</p>
+                        </div>
+                        <div class="sign-btn" id="sign-btn">
+                            <button id="btn-sub" type="submit">Sign Up</button>
+                        </div>
+                        <div class="sign-btn" id="sign-btn-load" style="display: none;">
+                            <button id="btn-dis" disabled><i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:18px;"></i></button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="core/v0/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 </body>
 </html>
