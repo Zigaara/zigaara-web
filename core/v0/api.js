@@ -37,10 +37,16 @@ $.ajax({
                 document.getElementById('sign-btn-load').style.display = 'none';
             }
         } else {
-            document.getElementById('error').innerHTML = result.description;
+            if(result.description){
+                document.getElementById('error').innerHTML = result.description;
+            }else {
+                document.getElementById('error').innerHTML = 'An unexpected error occured from the third party';
+            }
+            
             document.getElementById('show-error').style.display = 'block';
             document.getElementById('sign-btn').style.display = 'block';
             document.getElementById('sign-btn-load').style.display = 'none';
+            console.log(result)
         } 
     },
     success: function(result){
@@ -55,10 +61,15 @@ $.ajax({
                 document.getElementById('sign-btn-load').style.display = 'none';
             }
         } else {
-            document.getElementById('error').innerHTML = result.description;
+            if(result.description){
+                document.getElementById('error').innerHTML = result.description;
+            }else {
+                document.getElementById('error').innerHTML = 'An unexpected error occured from the third party';
+            }
             document.getElementById('show-error').style.display = 'block';
             document.getElementById('sign-btn').style.display = 'block';
             document.getElementById('sign-btn-load').style.display = 'none';
+            console.log(result)
         } 
     }
 });
